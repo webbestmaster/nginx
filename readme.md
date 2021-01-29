@@ -1,5 +1,11 @@
 ### Nginx
 
+Install
+
+```
+sudo apt-get install -y --no-install-recommends nginx
+```
+
 Run
 ```
 $ /usr/bin/nginx [-t] [-c ~/my-nginx.conf]
