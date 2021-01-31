@@ -3,8 +3,16 @@
 Install
 
 ```
-sudo apt-get install -y --no-install-recommends nginx
+$ sudo apt-get install -y --no-install-recommends nginx
 ```
+
+1.9.x
+```
+$ sudo add-apt-repository ppa:chris-lea/nginx-devel
+$ sudo apt-get update
+$ sudo apt-get install nginx
+```
+
 
 Run
 ```
