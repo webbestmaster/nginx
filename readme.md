@@ -65,3 +65,12 @@ Remove image
 ```
 $ docker image rm -f <image id>
 ```
+
+
+### Util
+
+Apache Benchmark: install 'n' run
+```
+$ sudo apt-get install apache2-utils
+$ ab -n 100 -c 5 http://localhost:9090/image/800x600/nginx-logo.png
+```
