@@ -14,13 +14,18 @@ $ /usr/bin/nginx [-t] [-c ~/my-nginx.conf]
 `-t` - Don’t run, just test the configuration file. NGINX checks configuration for correct syntax and then try to open files referred in configuration. \
 `-c` - Specify which configuration file NGINX should use instead of the default.
 
+Stop
 ```
 $ sudo nginx -s stop
 ```
 
+Restart
 ```
 $ sudo nginx -s reload
 ```
+
+### image_filter
+The ngx_http_image_filter_module module (0.7.54+) is a filter that transforms images in JPEG, GIF, PNG, and WebP formats.
 
 ### Docker
 
