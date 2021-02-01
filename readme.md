@@ -66,7 +66,7 @@ $ docker ps
 
 Stop image, get image name from `$ docker ps`
 ```
-$ docker stop <image name>
+$ docker stop <CONTAINER ID>
 ```
 
 Remove image
