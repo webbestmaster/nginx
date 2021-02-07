@@ -16,11 +16,12 @@ $ sudo apt-get install nginx
 
 Run
 ```
-$ /usr/bin/nginx [-t] [-c ~/my-nginx.conf]
+$ /usr/bin/nginx [-t] [-c ~/my-nginx.conf] [-g 'daemon off;']
 ```
 
-`-t` - Don’t run, just test the configuration file. NGINX checks configuration for correct syntax and then try to open files referred in configuration. \
 `-c` - Specify which configuration file NGINX should use instead of the default.
+`-t` - Don’t run, just test the configuration file. NGINX checks configuration for correct syntax and then try to open files referred in configuration. \
+`-g 'daemon off;'` - Don't run as daemon
 
 Stop
 ```
@@ -77,7 +78,7 @@ $ docker image rm -f <image id>
 
 ### Util
 
-Apache Benchmark: install 'n' run
+Apache Benchmark: install and run
 ```
 $ sudo apt-get install apache2-utils
 $ ab -n 100 -c 5 http://localhost:9090/image/800x600/nginx-logo.png
